@@ -21,7 +21,7 @@ if 'elemento_aleatorio' not in st.session_state:
 
 st.title('Acerte o país')
 st.pyplot(st.session_state.fig)
-st.write(st.session_state.elemento_aleatorio.lower())
+#st.write(st.session_state.elemento_aleatorio.lower())
 chute = st.text_input('Digite um país:')
 resultado = ""
 
