@@ -6,7 +6,7 @@ import pandas as pd
 
 # Verifica se o estado já foi inicializado
 if 'elemento_aleatorio' not in st.session_state:
-    pais = pd.read_csv('pais.txt', sep = '\t')
+    pais = pd.read_csv('pais.txt', sep='\t')
     pr = gpd.read_file('mundo.shp')
     pr.rename(columns={'GMI_CNTRY': 'sigla'}, inplace=True)
     pr = pd.merge(pr, pais, on='sigla', how='inner')
@@ -21,7 +21,11 @@ if 'elemento_aleatorio' not in st.session_state:
 
 st.title('Acerte o país')
 st.pyplot(st.session_state.fig)
-#st.write(st.session_state.elemento_aleatorio.lower())
+
+# Adicionar um botão para mostrar o país selecionado
+if st.button('Desistir'):
+    st.write(f"O país selecionado é: {st.session_state.elemento_aleatorio}")
+
 chute = st.text_input('Digite um país:')
 resultado = ""
 
