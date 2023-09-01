@@ -35,12 +35,10 @@ chute = st.text_input('Digite um país:')
 resultado = ""
 tempo_restante = ""
 
-progress_bar = st.sidebar.progress(0)  # Inicializa a barra de progresso em 0%
-tempo_restante_text = st.sidebar.empty()
 
 if st.button('Verificar'):
     if st.session_state.timer is None:
-        st.session_state.timer = time.time() + 60  # Define um temporizador de 20 segundos
+        st.session_state.timer = time.time() + 30  # Define um temporizador de 20 segundos
     if time.time() < st.session_state.timer:
         if chute.lower() == st.session_state.elemento_aleatorio.lower():
             resultado = "Você acertou!"
