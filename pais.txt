@@ -1,251 +1,251 @@
-pais	sigla
-Afeganistão	AFG
-África do Sul	ZAF
-Albânia	ALB
-Alemanha	DEU
-Andorra	AND
-Angola	AGO
-Anguila	AIA
-Antártica	ATA
-Antígua e Barbuda	ATG
-Arábia Saudita	SAU
-Argélia	DZA
-Argentina	ARG
-Armênia	ARM
-Aruba	ABW
-Austrália	AUS
-Áustria	AUT
-Azerbaijão	AZE
-Bahamas	BHS
-Bahrein	BHR
-Bangladesh	BGD
-Barbados	BRB
-Belarus	BLR
-Bélgica	BEL
-Belize	BLZ
-Benin	BEN
-Bermudas	BMU
-Bolívia	BOL
-Bósnia e Herzegovina	BIH
-Botsuana	BWA
-Brasil	BRA
-Brunei	BRN
-Bulgária	BGR
-Burkina Faso	BFA
-Burundi	BDI
-Butão	BTN
-Cabo Verde	CPV
-Camarões	CMR
-Camboja	KHM
-Canadá	CAN
-Cazaquistão	KAZ
-Chade	TCD
-Chile	CHL
-China	CHN
-Chipre	CYP
-Cidade do Vaticano	VAT
-Cingapura	SGP
-Colômbia	COL
-Comores	COM
-Coréia do Norte	PRK
-Coréia do Sul	KOR
-Costa do Marfim	CIV
-Costa Rica	CRI
-Croácia	HRV
-Cuba	CUB
-Curaçao	CUW
-Dinamarca	DNK
-Djibouti	DJI
-Dominica	DMA
-Egito	EGY
-El Salvador	SLV
-Emirados Árabes Unidos	ARE
-Equador	ECU
-Eritreia	ERI
-Eslováquia	SVK
-Eslovênia	SVN
-Espanha	ESP
-Estados Federados da Micronésia	FSM
-Estados Unidos da América	USA
-Estônia	EST
-Eswatini	SWZ
-Etiópia	ETH
-Fiji	FJI
-Filipinas	PHL
-Finlândia	FIN
-França	FRA
-Gabão	GAB
-Gâmbia	GMB
-Gana	GHA
-Geórgia	GEO
-Geórgia do Sul e as Ilhas Sandwich do Sul	SGS
-Gibraltar	GIB
-Grécia	GRC
-Grenada	GRD
-Gronelândia	GRL
-Guadalupe	GLP
-Guam	GUM
-Guatemala	GTM
-Guernsey	GGY
-Guiana	GUY
-Guiana Francesa	GUF
-Guiné	GIN
-Guiné Equatorial	GNQ
-Guiné-Bissau	GNB
-Haiti	HTI
-Honduras	HND
-Hong Kong	HKG
-Hungria	HUN
-Iêmen	YEM
-Ilha Bouvet	BVT
-Ilha da Reunião	REU
-Ilha de Man	IMN
-Ilha de Natal	CXR
-Ilha Norfolk	NFK
-Ilhas Åland	ALA
-Ilhas Cayman	CYM
-Ilhas Cocos	CCK
-Ilhas Cook	COK
-Ilhas Faroe	FRO
-Ilhas Malvinas	FLK
-Ilhas Marianas do Norte	MNP
-Ilhas Marshall	MHL
-Ilhas Menores Distantes dos Estados Unidos	UMI
-Ilhas Pitcairn	PCN
-Ilhas Salomão	SLB
-Ilhas Turcas e Caicos	TCA
-Ilhas Virgens (Reino Unido)	VGB
-Ilhas Virgens dos Estados Unidos	VIR
-Índia	IND
-Indonésia	IDN
-Irã	IRN
-Iraque	IRQ
-Irlanda	IRL
-Islândia	ISL
-Israel	ISR
-Itália	ITA
-Jamaica	JAM
-Japão	JPN
-Jersey	JEY
-Jordânia	JOR
-Kiribati	KIR
-Kosovo	XXK
-Kuwait	KWT
-Laos	LAO
-Lesotho	LSO
-Letônia	LVA
-Líbano	LBN
-Libéria	LBR
-Líbia	LBY
-Liechtenstein	LIE
-Lituânia	LTU
-Luxemburgo	LUX
-Macau	MAC
-Madagascar	MDG
-Malásia	MYS
-Malauí	MWI
-Maldivas	MDV
-Mali	MLI
-Malta	MLT
-Marrocos	MAR
-Martinica	MTQ
-Maurício	MUS
-Mauritânia	MRT
-Mayotte	MYT
-México	MEX
-Mianmar	MMR
-Moçambique	MOZ
-Moldávia	MDA
-Mongólia	MNG
-Montenegro	MNE
-Montserrat	MSR
-Namíbia	NAM
-Nauru	NRU
-Nepal	NPL
-Nicarágua	NIC
-Níger	NER
-Nigéria	NGA
-Niue	NIU
-Norte da Macedônia	MKD
-Noruega	NOR
-Nova Caledônia	NCL
-Nova Zelândia	NZL
-Omã	OMN
-Ouvido e Ilhas McDonald	HMD
-Países Baixos	NLD
-Países Baixos Caribenhos	BES
-Palau	PLW
-Palestina	PSE
-Panamá	PAN
-Papua Nova Guiné	PNG
-Paquistão	PAK
-Paraguai	PRY
-Peru	PER
-Polinésia Francesa	PYF
-Polônia	POL
-Porto Rico	PRI
-Portugal	PRT
-Principado de Mônaco	MCO
-Qatar	QAT
-Quênia	KEN
-Quirguizistão	KGZ
-Reino Unido	GBR
-República Centro-Africana	CAF
-República Democrática do Congo	COD
-República do Congo	COG
-República Dominicana	DOM
-Romênia	ROU
-Ruanda	RWA
-Rússia	RUS
-Saara Ocidental	ESH
-Samoa	WSM
-Samoa Americana	ASM
-Santa Helena, Ascensão e Tristão da Cunha	SHN
-Santa Lúcia	LCA
-Santo Bartolomeu	BLM
-São Marino	SMR
-São Martinho	MAF
-São Pedro e Miquelon	SPM
-São Tomé e Príncipe	STP
-São Vicente e as Granadinas	VCT
-Senegal	SEN
-Serra Leoa	SLE
-Sérvia	SRB
-Seychelles	SYC
-Sint Maarten	SXM
-Síria	SYR
-Somália	SOM
-Sri Lanka	LKA
-St. Kitts e Nevis	KNA
-Sudão	SDN
-Sudão do Sul	SSD
-Suécia	SWE
-Suíça	CHE
-Suriname	SUR
-Svalbard e Jan Mayen	SJM
-Tailândia	THA
-Taiwan	TWN
-Tajiquistão	TJK
-Tanzânia	TZA
-Tcheca	CZE
-Território Britânico do Oceano Índico	IOT
-Territórios Franceses do Sul e Antártico	ATF
-Timor Leste	TLS
-Togo	TGO
-Tokelau	TKL
-Tonga	TON
-Trinidad e Tobago	TTO
-Tunísia	TUN
-Turcomenistão	TKM
-Turquia	TUR
-Tuvalu	TUV
-Ucrânia	UKR
-Uganda	UGA
-Uruguai	URY
-Uzbequistão	UZB
-Vanuatu	VUT
-Venezuela	VEN
-Vietnã	VNM
-Wallis e Futuna	WLF
-Zâmbia	ZMB
-Zimbábue	ZWE
+pais	sigla	capital	continente	dificuldade
+Afeganistão	AFG	Cabul	Ásia	1
+África do Sul	ZAF	Pretória	África	1
+Albânia	ALB	Tirana	Europa	1
+Alemanha	DEU	Berlim	Europa	1
+Andorra	AND	Andorra-a-Velha	Europa	2
+Angola	AGO	Luanda	África	1
+Anguila	AIA	#N/D	#N/D	4
+Antártica	ATA	#N/D	#N/D	2
+Antígua e Barbuda	ATG	São João	América	3
+Arábia Saudita	SAU	Riade	Ásia	1
+Argélia	DZA	Argel	África	1
+Argentina	ARG	Buenos Aires	América	1
+Armênia	ARM	Erevã	Ásia	1
+Aruba	ABW	#N/D	#N/D	4
+Austrália	AUS	Camberra	Oceania	1
+Áustria	AUT	Viena	Europa	1
+Azerbaijão	AZE	Bacu	Ásia	1
+Bahamas	BHS	Nassau	América	2
+Bahrein	BHR	Manama	Ásia	2
+Bangladesh	BGD	Daca	Ásia	2
+Barbados	BRB	Bridgetown	América	2
+Belarus	BLR	#N/D	#N/D	4
+Bélgica	BEL	Bruxelas	Europa	1
+Belize	BLZ	Belmopã	América	2
+Benin	BEN	Porto Novo	África	1
+Bermudas	BMU	#N/D	#N/D	4
+Bolívia	BOL	Sucre	América	1
+Bósnia e Herzegovina	BIH	Saraievo	Europa	1
+Botsuana	BWA	Gaborone	África	1
+Brasil	BRA	Brasília	América	1
+Brunei	BRN	Bandar Seri Begauã	Ásia	1
+Bulgária	BGR	Sófia	Europa	1
+Burkina Faso	BFA	Uagadugu	África	2
+Burundi	BDI	Bujumbura	África	2
+Butão	BTN	Timbu	Ásia	2
+Cabo Verde	CPV	Praia	África	2
+Camarões	CMR	Iaundé	África	1
+Camboja	KHM	Pnom Pene	Ásia	2
+Canadá	CAN	Otava	América	1
+Cazaquistão	KAZ	Astana	Ásia	1
+Chade	TCD	Jamena	África	2
+Chile	CHL	Santiago	América	1
+China	CHN	Pequim	Ásia	1
+Chipre	CYP	Nicósia	Europa	2
+Vaticano	VAT	Vaticano	Europa	2
+Cingapura	SGP	#N/D	#N/D	4
+Colômbia	COL	Bogotá	América	1
+Comores	COM	Moroni	África	2
+Coréia do Norte	PRK	#N/D	#N/D	4
+Coréia do Sul	KOR	#N/D	#N/D	4
+Costa do Marfim	CIV	Iamussucro	África	1
+Costa Rica	CRI	São José	América	1
+Croácia	HRV	Zagrebe	Europa	1
+Cuba	CUB	Havana	América	2
+Curaçao	CUW	#N/D	#N/D	4
+Dinamarca	DNK	Copenhaga	Europa	1
+Djibouti	DJI	#N/D	#N/D	4
+Dominica	DMA	Roseau	América	2
+Egito	EGY	Cairo	África	1
+El Salvador	SLV	#N/D	#N/D	2
+Emirados Árabes Unidos	ARE	Abu Dabi	Ásia	2
+Equador	ECU	Quito	América	1
+Eritreia	ERI	Asmara	África	2
+Eslováquia	SVK	Bratislava	Europa	1
+Eslovênia	SVN	Liubliana	Europa	1
+Espanha	ESP	Madrid	Europa	1
+Estados Federados da Micronésia	FSM	#N/D	#N/D	4
+Estados Unidos da América	USA	#N/D	#N/D	4
+Estônia	EST	Talim	Europa	1
+Eswatini	SWZ	#N/D	#N/D	4
+Etiópia	ETH	Adis Abeba	África	1
+Fiji	FJI	Suva	Oceania	3
+Filipinas	PHL	Manila	Ásia	2
+Finlândia	FIN	Helsínquia	Europa	1
+França	FRA	Paris	Europa	1
+Gabão	GAB	Libreville	África	1
+Gâmbia	GMB	Banjul	África	2
+Gana	GHA	Acra	África	1
+Geórgia	GEO	Tebilíssi	Ásia	2
+Geórgia do Sul e as Ilhas Sandwich do Sul	SGS	#N/D	#N/D	4
+Gibraltar	GIB	#N/D	#N/D	4
+Grécia	GRC	Atenas	Europa	1
+Grenada	GRD	São Jorge	América	3
+Gronelândia	GRL	#N/D	#N/D	4
+Guadalupe	GLP	#N/D	#N/D	4
+Guam	GUM	#N/D	#N/D	4
+Guatemala	GTM	Cidade da Guatemala	América	2
+Guernsey	GGY	#N/D	#N/D	4
+Guiana	GUY	Georgetown	América	1
+Guiana Francesa	GUF	#N/D	#N/D	4
+Guiné	GIN	Conacri	África	1
+Guiné Equatorial	GNQ	Malabo	África	2
+Guiné-Bissau	GNB	Bissau	África	3
+Haiti	HTI	Porto Príncipe	América	2
+Honduras	HND	Tegucigalpa	América	2
+Hong Kong	HKG	#N/D	#N/D	4
+Hungria	HUN	Budapeste	Europa	1
+Iêmen	YEM	Saná	Ásia	2
+Ilha Bouvet	BVT	#N/D	#N/D	4
+Ilha da Reunião	REU	#N/D	#N/D	4
+Ilha de Man	IMN	#N/D	#N/D	4
+Ilha de Natal	CXR	#N/D	#N/D	4
+Ilha Norfolk	NFK	#N/D	#N/D	4
+Ilhas Åland	ALA	#N/D	#N/D	4
+Ilhas Cayman	CYM	#N/D	#N/D	4
+Ilhas Cocos	CCK	#N/D	#N/D	4
+Ilhas Cook	COK	#N/D	#N/D	4
+Ilhas Faroe	FRO	#N/D	#N/D	4
+Ilhas Malvinas	FLK	#N/D	#N/D	4
+Ilhas Marianas do Norte	MNP	#N/D	#N/D	4
+Ilhas Marshall	MHL	#N/D	#N/D	4
+Ilhas Menores Distantes dos Estados Unidos	UMI	#N/D	#N/D	4
+Ilhas Pitcairn	PCN	#N/D	#N/D	4
+Ilhas Salomão	SLB	#N/D	#N/D	4
+Ilhas Turcas e Caicos	TCA	#N/D	#N/D	4
+Ilhas Virgens (Reino Unido)	VGB	#N/D	#N/D	4
+Ilhas Virgens dos Estados Unidos	VIR	#N/D	#N/D	4
+Índia	IND	Nova Déli	Ásia	1
+Indonésia	IDN	Jacarta	Ásia	1
+Irã	IRN	Teerão	Ásia	1
+Iraque	IRQ	Bagdade	Ásia	1
+Irlanda	IRL	Dublim	Europa	1
+Islândia	ISL	Reiquiavique	Europa	1
+Israel	ISR	Jerusalém	Ásia	1
+Itália	ITA	Roma	Europa	1
+Jamaica	JAM	Kingston	América	2
+Japão	JPN	Tóquio	Ásia	1
+Jersey	JEY	#N/D	#N/D	4
+Jordânia	JOR	Amã	Ásia	2
+Kiribati	KIR	#N/D	#N/D	4
+Kosovo	XXK	#N/D	#N/D	4
+Kuwait	KWT	#N/D	#N/D	4
+Laos	LAO	Vienciana	Ásia	2
+Lesoto	LSO	Maseru	África	2
+Letônia	LVA	Riga	Europa	2
+Líbano	LBN	Beirute	Ásia	1
+Libéria	LBR	Monróvia	África	2
+Líbia	LBY	Trípoli	África	1
+Liechtenstein	LIE	Vaduz	Europa	3
+Lituânia	LTU	Vílnius	Europa	1
+Luxemburgo	LUX	Luxemburgo	Europa	3
+Macau	MAC	#N/D	#N/D	4
+Madagascar	MDG	Antananarivo	África	1
+Malásia	MYS	Cuala Lumpur	Ásia	2
+Malauí	MWI	#N/D	#N/D	4
+Maldivas	MDV	Malé	Ásia	3
+Mali	MLI	Bamaco	África	2
+Malta	MLT	Valeta	Europa	2
+Marrocos	MAR	Rebate	África	1
+Martinica	MTQ	#N/D	#N/D	4
+Maurício	MUS	#N/D	#N/D	4
+Mauritânia	MRT	Nuaquechote	África	2
+Mayotte	MYT	#N/D	#N/D	4
+México	MEX	Cidade do México	América	1
+Mianmar	MMR	Nepiedó	Ásia	1
+Moçambique	MOZ	Maputo	África	1
+Moldávia	MDA	Quixinau	Europa	1
+Mongólia	MNG	Ulã Bator	Ásia	1
+Montenegro	MNE	Podgoritsa	Europa	2
+Montserrat	MSR	#N/D	#N/D	4
+Namíbia	NAM	Vinduque	África	1
+Nauru	NRU	Iarém	Oceania	3
+Nepal	NPL	Catmandu	Ásia	2
+Nicarágua	NIC	Manágua	América	1
+Níger	NER	Niamei	África	1
+Nigéria	NGA	Abuja	África	1
+Niue	NIU	#N/D	#N/D	4
+Macedônia do Norte	MKD	Escópia	Europa	2
+Noruega	NOR	Oslo	Europa	1
+Nova Caledônia	NCL	#N/D	#N/D	4
+Nova Zelândia	NZL	Wellington	Oceania	1
+Omã	OMN	Mascate	Ásia	2
+Ouvido e Ilhas McDonald	HMD	#N/D	#N/D	4
+Países Baixos	NLD	Amesterdão	Europa	2
+Países Baixos Caribenhos	BES	#N/D	#N/D	4
+Palau	PLW	Ngerulmud	Oceania	3
+Palestina	PSE	#N/D	#N/D	4
+Panamá	PAN	Cidade do Panamá	América	1
+Papua Nova Guiné	PNG	Porto Moresby	Oceania	3
+Paquistão	PAK	Islamabade	Ásia	1
+Paraguai	PRY	Assunção	América	1
+Peru	PER	Lima	América	1
+Polinésia Francesa	PYF	#N/D	#N/D	4
+Polônia	POL	Varsóvia	Europa	1
+Porto Rico	PRI	#N/D	#N/D	4
+Portugal	PRT	Lisboa	Europa	1
+Mônaco	MCO	Mónaco	Europa	2
+Qatar	QAT	Doa	Ásia	3
+Quênia	KEN	Nairóbi	África	1
+Quirguizistão	KGZ	#N/D	#N/D	4
+Reino Unido	GBR	Londres	Europa	1
+República Centro-Africana	CAF	Bangui	África	2
+República Democrática do Congo	COD	Quinxassa	África	1
+República do Congo	COG	#N/D	#N/D	4
+República Dominicana	DOM	São Domingos	América	2
+Romênia	ROU	Bucareste	Europa	1
+Ruanda	RWA	Quigali	África	1
+Rússia	RUS	Moscovo	Europa	1
+Saara Ocidental	ESH	#N/D	#N/D	4
+Samoa	WSM	Apia	Oceania	3
+Samoa Americana	ASM	#N/D	#N/D	4
+Santa Helena, Ascensão e Tristão da Cunha	SHN	#N/D	#N/D	4
+Santa Lúcia	LCA	Castries	América	3
+Santo Bartolomeu	BLM	#N/D	#N/D	4
+São Marino	SMR	#N/D	#N/D	4
+São Martinho	MAF	#N/D	#N/D	4
+São Pedro e Miquelon	SPM	#N/D	#N/D	4
+São Tomé e Príncipe	STP	São Tomé	África	3
+São Vicente e as Granadinas	VCT	#N/D	#N/D	4
+Senegal	SEN	Dacar	África	1
+Serra Leoa	SLE	Freetown	África	1
+Sérvia	SRB	Belgrado	Europa	1
+Seychelles	SYC	Vitória	África	3
+Sint Maarten	SXM	#N/D	#N/D	4
+Síria	SYR	Damasco	Ásia	1
+Somália	SOM	Mogadíscio	África	1
+Sri Lanka	LKA	Sri Jaiavardenapura-Cota	Ásia	2
+St. Kitts e Nevis	KNA	#N/D	#N/D	4
+Sudão	SDN	Cartum	África	1
+Sudão do Sul	SSD	Juba	África	1
+Suécia	SWE	Estocolmo	Europa	1
+Suíça	CHE	Berna	Europa	1
+Suriname	SUR	Paramaribo	América	2
+Svalbard e Jan Mayen	SJM	#N/D	#N/D	4
+Tailândia	THA	Banguecoque	Ásia	2
+Taiwan	TWN	#N/D	#N/D	4
+Tajiquistão	TJK	Duchambé	Ásia	2
+Tanzânia	TZA	Dodoma	África	2
+Tcheca	CZE	#N/D	#N/D	4
+Território Britânico do Oceano Índico	IOT	#N/D	#N/D	4
+Territórios Franceses do Sul e Antártico	ATF	#N/D	#N/D	4
+Timor Leste	TLS	#N/D	#N/D	4
+Togo	TGO	Lomé	África	1
+Tokelau	TKL	#N/D	#N/D	4
+Tonga	TON	Nucualofa	Oceania	3
+Trinidad e Tobago	TTO	#N/D	#N/D	4
+Tunísia	TUN	Tunes	África	1
+Turcomenistão	TKM	Asgabate	Ásia	2
+Turquia	TUR	Ancara	Ásia	1
+Tuvalu	TUV	Funafuti	Oceania	3
+Ucrânia	UKR	Quieve	Europa	1
+Uganda	UGA	Campala	África	1
+Uruguai	URY	Montevideu	América	1
+Uzbequistão	UZB	Tasquente	Ásia	1
+Vanuatu	VUT	Porto Vila	Oceania	3
+Venezuela	VEN	Caracas	América	1
+Vietnã	VNM	Hanói	Ásia	1
+Wallis e Futuna	WLF	#N/D	#N/D	4
+Zâmbia	ZMB	Lusaca	África	1
+Zimbábue	ZWE	Harare	África	1
