@@ -84,6 +84,7 @@ st.write(resultado)
 
 # Se o botão "Pular" for clicado, gera um novo país aleatório
 if st.button('Desistir'):
+    st.write(f"O país selecionado erra: {st.session_state.elemento_aleatorio.lower()}")
     pais = pd.read_csv('pais.txt', sep='\t')
     pr = gpd.read_file('mundo.shp')
     pr.rename(columns={'GMI_CNTRY': 'sigla'}, inplace=True)
