@@ -1,0 +1,3 @@
+nome,pontuação
+Weverton,10.0
+Teste,20.0
