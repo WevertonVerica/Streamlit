@@ -100,13 +100,14 @@ if st.button('Desistir'):
 st.write(f"Você possui {st.session_state.pontos} pontos.")
 if st.session_state.pontos > 10 and time.time() > st.session_state.timer:
     nome_jogador = st.text_input("Parabéns! Você ganhou mais de 10 pontos. Insira seu nome:")
-    nova_linha = {'nome': nome_jogador, 'pontuação': st.session_state.pontos}
-    placar = placar.append(nova_linha, ignore_index=True)
-    df = pd.DataFrame(placar)
-    df = df.dropna()
-    st.write(df)
-    df = df.dropna()
-    df.to_csv('placar.txt', index=False)
+    if st.button('Incluir o nome do placar de lider'):
+        nova_linha = {'nome': nome_jogador, 'pontuação': st.session_state.pontos}
+        placar = placar.append(nova_linha, ignore_index=True)
+        df = pd.DataFrame(placar)
+        df = df.dropna()
+        st.write(df)
+        df = df.dropna()
+        df.to_csv('placar.txt', index=False)
 else:
     df = pd.DataFrame(placar)
     st.write(df)
