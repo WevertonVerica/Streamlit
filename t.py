@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import random
 import pandas as pd
 import time
+st.title('Acerte o país')
 
 placar = pd.read_csv('placar.txt', sep=',')
 # Verifica se o estado já foi inicializado
@@ -12,10 +13,13 @@ if 'elemento_aleatorio' not in st.session_state:
     pr = gpd.read_file('mundo.shp')
     pr.rename(columns={'GMI_CNTRY': 'sigla'}, inplace=True)
     pr = pd.merge(pr, pais, on='sigla', how='inner')
+    pr = pr[pr['dificuldade'] <= 3]
     lista = pr['pais']
     st.session_state.elemento_aleatorio = random.choice(lista)
     pais = pr[pr['pais'] == st.session_state.elemento_aleatorio]
     st.session_state.elemento_moeda = pais['CURR_TYPE'].values[0]
+    st.session_state.elemento_capital = pais['capital'].values[0]
+    st.session_state.elemento_cont = pais['continente'].values[0]
     fig, ax = plt.subplots()
     pais.plot(ax=ax)
     ax.set_title('Mapa do País Selecionado')
@@ -23,13 +27,17 @@ if 'elemento_aleatorio' not in st.session_state:
     st.session_state.timer = None
     st.session_state.pontos = 0  # Inicializa os pontos com 0
 
-st.title('Acerte o país')
+
 st.pyplot(st.session_state.fig)
 
 # Adicionar um botão para mostrar o país selecionado
 
-if st.button('DICA'):
+if st.button('DICA MOEDA'):
     st.write(f"A moeda desse país é: {st.session_state.elemento_moeda}")
+if st.button('DICA Capital'):
+    st.write(f"A moeda desse país é: {st.session_state.elemento_capital}")
+if st.button('DICA Continente'):
+    st.write(f"A moeda desse país é: {st.session_state.elemento_cont}")
 
 chute = st.text_input('Digite um país:')
 resultado = ""
@@ -47,10 +55,13 @@ if st.button('Verificar'):
             pr = gpd.read_file('mundo.shp')
             pr.rename(columns={'GMI_CNTRY': 'sigla'}, inplace=True)
             pr = pd.merge(pr, pais, on='sigla', how='inner')
+            pr = pr[pr['dificuldade'] <= 3]
             lista = pr['pais']
             st.session_state.elemento_aleatorio = random.choice(lista)
             pais = pr[pr['pais'] == st.session_state.elemento_aleatorio]
             st.session_state.elemento_moeda = pais['CURR_TYPE'].values[0]
+            st.session_state.elemento_capital = pais['capital'].values[0]
+            st.session_state.elemento_cont = pais['continente'].values[0]
             fig, ax = plt.subplots()
             pais.plot(ax=ax)
             ax.set_title('Mapa do País Selecionado')
@@ -63,10 +74,13 @@ if st.button('Verificar'):
                     pr = gpd.read_file('mundo.shp')
                     pr.rename(columns={'GMI_CNTRY': 'sigla'}, inplace=True)
                     pr = pd.merge(pr, pais, on='sigla', how='inner')
+                    pr = pr[pr['dificuldade'] <= 3]
                     lista = pr['pais']
                     st.session_state.elemento_aleatorio = random.choice(lista)
                     pais = pr[pr['pais'] == st.session_state.elemento_aleatorio]
                     st.session_state.elemento_moeda = pais['CURR_TYPE'].values[0]
+                    st.session_state.elemento_capital = pais['capital'].values[0]
+                    st.session_state.elemento_cont = pais['continente'].values[0]
                     fig, ax = plt.subplots()
                     pais.plot(ax=ax)
                     ax.set_title('Mapa do País Selecionado')
@@ -87,10 +101,13 @@ if st.button('Desistir'):
     pr = gpd.read_file('mundo.shp')
     pr.rename(columns={'GMI_CNTRY': 'sigla'}, inplace=True)
     pr = pd.merge(pr, pais, on='sigla', how='inner')
+    pr = pr[pr['dificuldade'] <= 3]
     lista = pr['pais']
     st.session_state.elemento_aleatorio = random.choice(lista)
     pais = pr[pr['pais'] == st.session_state.elemento_aleatorio]
     st.session_state.elemento_moeda = pais['CURR_TYPE'].values[0]
+    st.session_state.elemento_capital = pais['capital'].values[0]
+    st.session_state.elemento_cont = pais['continente'].values[0]
     fig, ax = plt.subplots()
     pais.plot(ax=ax)
     ax.set_title('Mapa do País Selecionado')
