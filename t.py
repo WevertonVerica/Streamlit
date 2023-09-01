@@ -123,8 +123,8 @@ if st.session_state.pontos > 10 and time.time() > st.session_state.timer:
         df = pd.DataFrame(placar)
         df = df.dropna()
         st.write(df)
-        df = df.dropna()
-        df.to_csv('placar.txt', index=False)
+        #df = df.dropna()
+        #df.to_csv('placar.txt', index=False)
 else:
     df = pd.DataFrame(placar)
     st.write(df)
