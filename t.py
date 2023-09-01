@@ -119,6 +119,7 @@ if st.session_state.pontos > 10 and time.time() > st.session_state.timer:
     nome_jogador = st.text_input("Parabéns! Você ganhou mais de 10 pontos. Insira seu nome:")
     if st.button('Incluir o nome do placar de lider'):
         nova_linha = {'nome': nome_jogador, 'pontuação': st.session_state.pontos}
+        placar = pd.read_csv('placar.txt', sep=',')
         placar = placar.append(nova_linha, ignore_index=True)
         df = pd.DataFrame(placar)
         df = df.dropna()
