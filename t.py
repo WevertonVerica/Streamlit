@@ -13,7 +13,7 @@ if 'elemento_aleatorio' not in st.session_state:
     pr = gpd.read_file('mundo.shp')
     pr.rename(columns={'GMI_CNTRY': 'sigla'}, inplace=True)
     pr = pd.merge(pr, pais, on='sigla', how='inner')
-    # pr = pr[pr['dificuldade'] < 3]
+    pr = pr[pr['dificuldade'] < 4]
     lista = pr['pais']
     st.session_state.elemento_aleatorio = random.choice(lista)
     pais = pr[pr['pais'] == st.session_state.elemento_aleatorio]
