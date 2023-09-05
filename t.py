@@ -122,12 +122,12 @@ if st.session_state.pontos > 10 and time.time() > st.session_state.timer:
         nova_linha = {'nome': nome_jogador, 'pontuação': st.session_state.pontos}
         placar = pd.read_csv('placar.txt', sep=',')
         placar = pd.DataFrame(placar)
-        placar = placar.append(nova_linha, ignore_index=True)
-        df = pd.DataFrame(placar)
+        df = placar.append(nova_linha, ignore_index=True)
+        #df = pd.DataFrame(placar)
         df = df.dropna()
         st.write(df)
         #df = df.dropna()
-        #df.to_csv('placar.txt', index=False)
+        df.to_csv('placar.txt', index=False)
 else:
     df = pd.DataFrame(placar)
     st.write(df)
