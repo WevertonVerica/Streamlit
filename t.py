@@ -7,6 +7,7 @@ import time
 st.title('Acerte o país')
 
 placar = pd.read_csv('placar.txt', sep=',')
+placar.to_csv('placar.txt', index=False)
 # Verifica se o estado já foi inicializado
 if 'elemento_aleatorio' not in st.session_state:
     pais = pd.read_csv('pais.txt', sep='\t')
