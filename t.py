@@ -7,7 +7,6 @@ import time
 st.title('Acerte o país')
 
 placar = pd.read_csv('placar.txt', sep=',')
-placar.to_csv('placar.txt', index=False)
 # Verifica se o estado já foi inicializado
 if 'elemento_aleatorio' not in st.session_state:
     pais = pd.read_csv('pais.txt', sep='\t')
@@ -124,8 +123,10 @@ if st.session_state.pontos > 10 and time.time() > st.session_state.timer:
         placar = pd.read_csv('placar.txt', sep=',')
         df = pd.concat([placar, df], ignore_index=True)
         #df = pd.DataFrame(placar)
-        st.write(df)
+        dados_ordenados = sorted(df, key=lambda x: x['Pontuação'], reverse=True)
+        st.write(dados_ordenados)
         df.to_csv('placar.txt', index=False)
 else:
     df = pd.DataFrame(placar)
-    st.write(df)
+    dados_ordenados = sorted(df, key=lambda x: x['Pontuação'], reverse=True)
+    st.write(dados_ordenados)
