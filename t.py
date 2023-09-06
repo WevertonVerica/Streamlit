@@ -35,9 +35,9 @@ st.pyplot(st.session_state.fig)
 if st.button('DICA MOEDA'):
     st.write(f"A moeda desse país é: {st.session_state.elemento_moeda}")
 if st.button('DICA Capital'):
-    st.write(f"A moeda desse país é: {st.session_state.elemento_capital}")
+    st.write(f"A Capital desse país é: {st.session_state.elemento_capital}")
 if st.button('DICA Continente'):
-    st.write(f"A moeda desse país é: {st.session_state.elemento_cont}")
+    st.write(f"O continente desse país é: {st.session_state.elemento_cont}")
 
 chute = st.text_input('Digite um país:')
 resultado = ""
@@ -121,10 +121,14 @@ if st.session_state.pontos > 10 and time.time() > st.session_state.timer:
         data = {'nome': [nome_jogador], 'pontuação': [st.session_state.pontos]}
         df = pd.DataFrame(data, index=[0])
         placar = pd.read_csv('placar.txt', sep=',')
-        df = pd.concat([placar, df], ignore_index=True)
+        pl = pd.concat([placar, df], ignore_index=True)
         #df = pd.DataFrame(placar)
-        st.write(df)
-        df.to_csv('placar.txt', index=False)
+        st.write(pl)
+        #df.to_csv('placar.txt', index=False)
+        def salvar_dataframe():
+            global pl
+            pl.to_csv("placar.txt", index=False)
+        salvar_dataframe()
 else:
     df = pd.DataFrame(placar)
     st.write(df)
