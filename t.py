@@ -123,10 +123,8 @@ if st.session_state.pontos > 10 and time.time() > st.session_state.timer:
         placar = pd.read_csv('placar.txt', sep=',')
         df = pd.concat([placar, df], ignore_index=True)
         #df = pd.DataFrame(placar)
-        dados_ordenados = sorted(df, key=lambda x: x['Pontuação'], reverse=True)
-        st.write(dados_ordenados)
+        st.write(df)
         df.to_csv('placar.txt', index=False)
 else:
     df = pd.DataFrame(placar)
-    dados_ordenados = sorted(df, key=lambda x: x['Pontuação'], reverse=True)
-    st.write(dados_ordenados)
+    st.write(df)
