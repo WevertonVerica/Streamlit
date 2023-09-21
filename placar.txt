@@ -1,2 +1,9 @@
-Nome, Pontuação
-Weverton, 20
+    nome  pontuação
+Weverton       10.0
+   Teste       20.0
+Weverton       20.0
+   teste       20.0
+   Teste       30.0
+    test       20.0
+    test       20.0
+   teste       20.0
