@@ -160,5 +160,4 @@ if st.session_state.pontos > 10 and time.time() > st.session_state.timer:
         response = requests.put(url, headers=headers, json=data)
 else:
     df = pd.DataFrame(placar)
-    df_ordenado = df.sort_values(by='pontuação', ascending=False)
     st.write(df)
