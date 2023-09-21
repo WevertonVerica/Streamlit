@@ -133,7 +133,7 @@ if st.session_state.pontos > 10 and time.time() > st.session_state.timer:
         #df = pd.DataFrame(placar)
         st.write(pl)
         #df.to_csv('placar.txt', index=False)
-        p = pl.to_string(index=False, sep=",")
+        p = pl.to_string(index=False)
         username = "WevertonVerica"
         repository = "Streamlit"
         path = "placar.txt"  # O caminho para onde deseja salvar o arquivo no repositório
