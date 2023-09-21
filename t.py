@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import random
 import pandas as pd
 import time
+import requests
+import base64
 st.title('Acerte o país')
 
 placar = pd.read_csv('placar.txt', sep=',')
@@ -20,6 +22,7 @@ if 'elemento_aleatorio' not in st.session_state:
     st.session_state.elemento_moeda = pais['CURR_TYPE'].values[0]
     st.session_state.elemento_capital = pais['capital'].values[0]
     st.session_state.elemento_cont = pais['continente'].values[0]
+    st.session_state.elemento_band = pais['ISO_2DIGIT'].values[0]
     fig, ax = plt.subplots()
     pais.plot(ax=ax)
     ax.set_title('Mapa do País Selecionado')
@@ -27,17 +30,20 @@ if 'elemento_aleatorio' not in st.session_state:
     st.session_state.timer = None
     st.session_state.pontos = 0  # Inicializa os pontos com 0
 
+url_imagem = 'https://flagcdn.com/160x120/' + st.session_state.elemento_band.lower() + '.png'
 
 st.pyplot(st.session_state.fig)
 
-# Adicionar um botão para mostrar o país selecionado
+col1, col2, col3, col4 = st.columns(4)
 
-if st.button('DICA MOEDA'):
+if col1.button('DICA MOEDA'):
     st.write(f"A moeda desse país é: {st.session_state.elemento_moeda}")
-if st.button('DICA Capital'):
+if col2.button('DICA Capital'):
     st.write(f"A Capital desse país é: {st.session_state.elemento_capital}")
-if st.button('DICA Continente'):
+if col3.button('DICA Continente'):
     st.write(f"O continente desse país é: {st.session_state.elemento_cont}")
+if col4.button('DICA Bandeira'):
+    st.image(url_imagem, caption='Minha Imagem Online', use_column_width=True)
 
 chute = st.text_input('Digite um país:')
 resultado = ""
