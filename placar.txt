@@ -1,4 +1,3 @@
- 0
- 1
- 2
- 3
+    nome  pontuação
+Weverton       20.0
+   teste       20.0
