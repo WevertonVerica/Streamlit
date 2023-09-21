@@ -30,8 +30,6 @@ if 'elemento_aleatorio' not in st.session_state:
     st.session_state.timer = None
     st.session_state.pontos = 0  # Inicializa os pontos com 0
 
-url_imagem = 'https://flagcdn.com/160x120/' + st.session_state.elemento_band.lower() + '.png'
-
 st.pyplot(st.session_state.fig)
 
 col1, col2, col3, col4 = st.columns(4)
@@ -43,6 +41,7 @@ if col2.button('DICA Capital'):
 if col3.button('DICA Continente'):
     st.write(f"O continente desse país é: {st.session_state.elemento_cont}")
 if col4.button('DICA Bandeira'):
+    url_imagem = 'https://flagcdn.com/160x120/' + st.session_state.elemento_band.lower() + '.png'
     st.image(url_imagem, caption='Minha Imagem Online', use_column_width=True)
 
 chute = st.text_input('Digite um país:')
