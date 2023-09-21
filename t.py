@@ -60,13 +60,14 @@ if st.button('Verificar'):
             pr = gpd.read_file('mundo.shp')
             pr.rename(columns={'GMI_CNTRY': 'sigla'}, inplace=True)
             pr = pd.merge(pr, pais, on='sigla', how='inner')
-            pr = pr[pr['dificuldade'] <= 3]
+            pr = pr[pr['dificuldade'] < 4]
             lista = pr['pais']
             st.session_state.elemento_aleatorio = random.choice(lista)
             pais = pr[pr['pais'] == st.session_state.elemento_aleatorio]
             st.session_state.elemento_moeda = pais['CURR_TYPE'].values[0]
             st.session_state.elemento_capital = pais['capital'].values[0]
             st.session_state.elemento_cont = pais['continente'].values[0]
+            st.session_state.elemento_band = pais['ISO_2DIGIT'].values[0]
             fig, ax = plt.subplots()
             pais.plot(ax=ax)
             ax.set_title('Mapa do País Selecionado')
@@ -79,13 +80,14 @@ if st.button('Verificar'):
                     pr = gpd.read_file('mundo.shp')
                     pr.rename(columns={'GMI_CNTRY': 'sigla'}, inplace=True)
                     pr = pd.merge(pr, pais, on='sigla', how='inner')
-                    pr = pr[pr['dificuldade'] <= 3]
+                    pr = pr[pr['dificuldade'] < 4]
                     lista = pr['pais']
                     st.session_state.elemento_aleatorio = random.choice(lista)
                     pais = pr[pr['pais'] == st.session_state.elemento_aleatorio]
                     st.session_state.elemento_moeda = pais['CURR_TYPE'].values[0]
                     st.session_state.elemento_capital = pais['capital'].values[0]
                     st.session_state.elemento_cont = pais['continente'].values[0]
+                    st.session_state.elemento_band = pais['ISO_2DIGIT'].values[0]
                     fig, ax = plt.subplots()
                     pais.plot(ax=ax)
                     ax.set_title('Mapa do País Selecionado')
@@ -106,13 +108,14 @@ if st.button('Desistir'):
     pr = gpd.read_file('mundo.shp')
     pr.rename(columns={'GMI_CNTRY': 'sigla'}, inplace=True)
     pr = pd.merge(pr, pais, on='sigla', how='inner')
-    pr = pr[pr['dificuldade'] <= 3]
+    pr = pr[pr['dificuldade'] < 4]
     lista = pr['pais']
     st.session_state.elemento_aleatorio = random.choice(lista)
     pais = pr[pr['pais'] == st.session_state.elemento_aleatorio]
     st.session_state.elemento_moeda = pais['CURR_TYPE'].values[0]
     st.session_state.elemento_capital = pais['capital'].values[0]
     st.session_state.elemento_cont = pais['continente'].values[0]
+    st.session_state.elemento_band = pais['ISO_2DIGIT'].values[0]
     fig, ax = plt.subplots()
     pais.plot(ax=ax)
     ax.set_title('Mapa do País Selecionado')
