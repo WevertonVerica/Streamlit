@@ -9,7 +9,6 @@ import base64
 st.title('Acerte o país')
 
 placar = pd.read_csv('placar.txt', sep=',')
-pla = placar
 # Verifica se o estado já foi inicializado
 if 'elemento_aleatorio' not in st.session_state:
     pais = pd.read_csv('pais.txt', sep='\t')
@@ -160,5 +159,5 @@ if st.session_state.pontos > 10 and time.time() > st.session_state.timer:
         }
         response = requests.put(url, headers=headers, json=data)
 else:
-    df = pd.DataFrame(pla)
+    df = pd.DataFrame(placar)
     st.write(df)
