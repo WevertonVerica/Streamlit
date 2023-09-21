@@ -8,7 +8,7 @@ import requests
 import base64
 st.title('Acerte o país')
 
-placar = pd.read_csv('placar.txt', sep='\t')
+placar = pd.read_csv('placar.txt', sep=',')
 pla = placar
 # Verifica se o estado já foi inicializado
 if 'elemento_aleatorio' not in st.session_state:
@@ -129,12 +129,12 @@ if st.session_state.pontos > 10 and time.time() > st.session_state.timer:
     if st.button('Incluir o nome do placar de lider'):
         data = {'nome': [nome_jogador], 'pontuação': [st.session_state.pontos]}
         df = pd.DataFrame(data, index=[0])
-        placar = pd.read_csv('placar.txt', sep='       ')
+        placar = pd.read_csv('placar.txt', sep=',')
         pl = pd.concat([placar, df], ignore_index=True)
         #df = pd.DataFrame(placar)
         st.write(pl)
         #df.to_csv('placar.txt', index=False)
-        p = pl.to_string(index=False)
+        p = pl.to_string(index=False, sep=",")
         username = "WevertonVerica"
         repository = "Streamlit"
         path = "placar.txt"  # O caminho para onde deseja salvar o arquivo no repositório
