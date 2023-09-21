@@ -137,7 +137,7 @@ if st.session_state.pontos > 10 and time.time() > st.session_state.timer:
         username = "WevertonVerica"
         repository = "Streamlit"
         path = "placar.txt"  # O caminho para onde deseja salvar o arquivo no repositório
-        token = "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"  # Substitua pelo seu token de acesso do GitHub
+        token = "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"  # Substitua pelo seu token de acesso do GitHub
         conteudo_txt = p
         conteudo_base64 = base64.b64encode(conteudo_txt.encode()).decode()
         # Faça uma solicitação PUT para enviar o arquivo TXT para o repositório no GitHub
