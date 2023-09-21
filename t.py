@@ -8,7 +8,7 @@ import requests
 import base64
 st.title('Acerte o país')
 
-placar = pd.read_csv('placar.txt', sep='       ')
+placar = pd.read_csv('placar.txt', sep='\t')
 pla = placar
 # Verifica se o estado já foi inicializado
 if 'elemento_aleatorio' not in st.session_state:
