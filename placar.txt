@@ -1,4 +1,2 @@
- 0
- 1
- 2
- 3
+Nome, Pontuação
+Weverton, 20
