@@ -134,30 +134,7 @@ if st.session_state.pontos > 10 and time.time() > st.session_state.timer:
         st.write(pl)
         #df.to_csv('placar.txt', index=False)
         p = pl.to_string(index=False)
-        username = "WevertonVerica"
-        repository = "Streamlit"
-        path = "placar.txt"  # O caminho para onde deseja salvar o arquivo no repositório
-        token = "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"  # Substitua pelo seu token de acesso do GitHub
-        conteudo_txt = p
-        conteudo_base64 = base64.b64encode(conteudo_txt.encode()).decode()
-        # Faça uma solicitação PUT para enviar o arquivo TXT para o repositório no GitHub
-        url = f"https://api.github.com/repos/{username}/{repository}/contents/{path}"
-        headers = {
-            "Authorization": f"token {token}",
-        }
-        response = requests.get(url, headers=headers)
-        if response.status_code == 200:
-            conteudo_existente = response.json()
-            sha_existente = conteudo_existente["sha"]
-        else:
-            # Se o arquivo não existir, o SHA-1 será None
-            sha_existente = None
-        data = {
-            "message": "Adicionando ou atualizando arquivo TXT via Streamlit",
-            "content": conteudo_base64,
-            "sha": sha_existente,  # Forneça o SHA-1 do arquivo existente
-        }
-        response = requests.put(url, headers=headers, json=data)
+
 else:
     df = pd.DataFrame(placar)
     st.write(df)
