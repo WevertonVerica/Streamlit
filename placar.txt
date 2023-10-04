@@ -1,3 +1,4 @@
     nome  pontuação
 Weverton       60.0
 Weverton       80.0
+Gabriela       70.0
