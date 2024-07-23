@@ -1,5 +1,7 @@
 pip uninstall matplotlib
-pip install matplotlibimport streamlit as st
+pip install matplotlib
+
+import streamlit as st
 
 import geopandas as gpd
 import matplotlib.pyplot as plt
