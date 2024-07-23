@@ -1,4 +1,6 @@
-import streamlit as st
+pip uninstall matplotlib
+pip install matplotlibimport streamlit as st
+
 import geopandas as gpd
 import matplotlib.pyplot as plt
 import random
