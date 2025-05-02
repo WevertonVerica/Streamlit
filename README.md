@@ -5,7 +5,7 @@ Um jogo simples no terminal em que o jogador tenta adivinhar o nome de um país 
 ## Como jogar
 
 1. [clique aqui](https://5audnn34pahdmbkbbbbqou.streamlit.app/), ou execute o arquivo `acertar_pais.py`.
-2. Leia as dicas.
+2. Pode pedir dica de qual a moeda, bandeira e continente que o pais se encontra.
 3. Tente acertar o país digitando o nome completo.
 
 ## Tecnologias usadas
@@ -17,3 +17,7 @@ Um jogo simples no terminal em que o jogador tenta adivinhar o nome de um país 
 ## Objetivo
 
 Este jogo foi feito como parte de um projeto pessoal de aprendizado e prática de lógica em Python.
+
+## possíveis melhoras no código
+
+Eu queria colocar um placar de lideres, para atualizar de acordo com a sua pontuação, mas por se tratar de um repositório do github eu não consegui
