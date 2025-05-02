@@ -18,6 +18,6 @@ Um jogo simples no terminal em que o jogador tenta adivinhar o nome de um país 
 
 Este jogo foi feito como parte de um projeto pessoal de aprendizado e prática de lógica em Python.
 
-## possíveis melhoras no código
+## Possíveis melhoras no código
 
 Eu queria colocar um placar de lideres, para atualizar de acordo com a sua pontuação, mas por se tratar de um repositório do github eu não consegui
