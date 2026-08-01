@@ -44,7 +44,7 @@ if col4.button('DICA Bandeira'):
     url_imagem = 'https://flagcdn.com/160x120/' + st.session_state.elemento_band.lower() + '.png'
     st.image(url_imagem, caption='Minha Imagem Online', use_column_width=True)
 
-chute = st.text_input('Digite um país:')
+chute = st.text_input('Digite um país:', key='chute')
 resultado = ""
 tempo_restante = ""
 
@@ -86,8 +86,8 @@ if chute:
 
             st.success("Você acertou!")
 
+            st.session_state.chute = ""
             st.rerun()
-
         elif len(chute) >= len(st.session_state.elemento_aleatorio):
             resultado = "Tente outra vez."
 
