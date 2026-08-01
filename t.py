@@ -86,7 +86,6 @@ if chute:
 
             st.success("Você acertou!")
 
-            st.session_state.chute = ""
             st.rerun()
         elif len(chute) >= len(st.session_state.elemento_aleatorio):
             resultado = "Tente outra vez."
