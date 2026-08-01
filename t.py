@@ -49,57 +49,50 @@ resultado = ""
 tempo_restante = ""
 
 
-if st.button('Verificar'):
+if chute:
+
     if st.session_state.timer is None:
-        st.session_state.timer = time.time() + 120  # Define um temporizador de 20 segundos
+        st.session_state.timer = time.time() + 120
+
     if time.time() < st.session_state.timer:
-        if chute.lower() == st.session_state.elemento_aleatorio.lower():
+
+        if chute.strip().lower() == st.session_state.elemento_aleatorio.lower():
+
             resultado = "Você acertou!"
-            st.session_state.pontos += 10  # Incrementa os pontos em 10
+            st.session_state.pontos += 10
+
             pais = pd.read_csv('pais.txt', sep='\t')
             pr = gpd.read_file('mundo.shp')
+
             pr.rename(columns={'GMI_CNTRY': 'sigla'}, inplace=True)
             pr = pd.merge(pr, pais, on='sigla', how='inner')
             pr = pr[pr['dificuldade'] < 4]
+
             lista = pr['pais']
             st.session_state.elemento_aleatorio = random.choice(lista)
+
             pais = pr[pr['pais'] == st.session_state.elemento_aleatorio]
+
             st.session_state.elemento_moeda = pais['CURR_TYPE'].values[0]
             st.session_state.elemento_capital = pais['capital'].values[0]
             st.session_state.elemento_cont = pais['continente'].values[0]
             st.session_state.elemento_band = pais['ISO_2DIGIT'].values[0]
+
             fig, ax = plt.subplots()
             pais.plot(ax=ax)
             ax.set_title('Mapa do País Selecionado')
+
             st.session_state.fig = fig
-            if st.button('Jogar novamente'):
-                if chute.lower() == st.session_state.elemento_aleatorio.lower():
-                    resultado = "Você acertou!"
-                    st.session_state.pontos += 10  # Incrementa os pontos em 10
-                    pais = pd.read_csv('pais.txt', sep='\t')
-                    pr = gpd.read_file('mundo.shp')
-                    pr.rename(columns={'GMI_CNTRY': 'sigla'}, inplace=True)
-                    pr = pd.merge(pr, pais, on='sigla', how='inner')
-                    pr = pr[pr['dificuldade'] < 4]
-                    lista = pr['pais']
-                    st.session_state.elemento_aleatorio = random.choice(lista)
-                    pais = pr[pr['pais'] == st.session_state.elemento_aleatorio]
-                    st.session_state.elemento_moeda = pais['CURR_TYPE'].values[0]
-                    st.session_state.elemento_capital = pais['capital'].values[0]
-                    st.session_state.elemento_cont = pais['continente'].values[0]
-                    st.session_state.elemento_band = pais['ISO_2DIGIT'].values[0]
-                    fig, ax = plt.subplots()
-                    pais.plot(ax=ax)
-                    ax.set_title('Mapa do País Selecionado')
-                    st.session_state.fig = fig
-                else:
-                    resultado = "Tente outra vez."
-        else:
+
+            st.success("Você acertou!")
+
+            st.rerun()
+
+        elif len(chute) >= len(st.session_state.elemento_aleatorio):
             resultado = "Tente outra vez."
+
     else:
         resultado = "Tempo esgotado!"
-
-st.write(resultado)
 
 # Se o botão "Pular" for clicado, gera um novo país aleatório
 if st.button('Desistir'):
